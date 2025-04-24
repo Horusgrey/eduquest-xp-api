@@ -1,6 +1,6 @@
 import express from 'express';
 import cors from 'cors';
-import xpRoute from './routes/xp.js';
+import xpRoute from './api/routes/xp.js'; // NOTE: path updated since it's now deeper
 
 const app = express();
 app.use(cors());
