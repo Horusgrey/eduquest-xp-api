@@ -1,4 +1,3 @@
-# force re-deploy by modifying file
 # updated to use npm instead of yarn
 services:
   - type: web
