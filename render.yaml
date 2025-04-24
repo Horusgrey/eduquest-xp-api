@@ -1,9 +1,9 @@
 services:
   - type: web
     name: eduquest-xp-api
-    env: node
+    runtime: node
+    repo: https://github.com/Horusgrey/eduquest-xp-api
     plan: free
+    region: oregon
     buildCommand: npm install
     startCommand: npm start
-    rootDir: .
-    autoDeploy: false
