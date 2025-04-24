@@ -1,3 +1,4 @@
+# updated to use npm instead of yarn
 services:
   - type: web
     name: eduquest-xp-api
