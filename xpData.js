@@ -1,4 +1,8 @@
-export let xpStore = { xp: 0, badges: [], quizzesTaken: [] };
+export let xpStore = {
+  xp: 0,
+  badges: [],
+  quizzesTaken: []
+};
 
 export function readXP() {
   return xpStore;
