@@ -1,7 +1,5 @@
-import { Router } from 'express';
-import { getXP, postXP } from '../controllers/xpController.js';
+// xp.js
+// Import the xpController using the correct relative path
+import xpController from './xpController.js';
 
-const router = Router();
-router.get('/', getXP);
-router.post('/', postXP);
-export default router;
+// ... rest of the xp.js code ...
