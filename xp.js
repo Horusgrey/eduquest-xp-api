@@ -1,5 +1,13 @@
-// xp.js
-// Import the xpController using the correct relative path
-import xpController from './xpController.js';
+import { Router } from 'express';
+import { getXP, updateXP } from './xpController.js';
 
-// ... rest of the xp.js code ...
+const router = Router();
+router.get('/', (req, res) => {
+  res.json(getXP());
+});
+router.post('/', (req, res) => {
+  updateXP(req.body);
+  res.json({ success: true, data: getXP() });
+});
+
+export default router;
